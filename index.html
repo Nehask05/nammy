@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Movie Night</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Plan Your Movie Night</h2>
+        <form id="movieForm" method="POST" action="submit.php">
+            <table>
+                <tr>
+                    <td><label for="name">Your Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" id="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="movie">Choose Movie:</label></td>
+                    <td>
+                        <select id="movie" name="movie" required>
+                            <option value="" disabled selected>Select a Movie</option>
+                            <optgroup label="English">
+                                <option value="Inception">Inception</option>
+                                <option value="Titanic">Titanic</option>
+                                <option value="Avengers: Endgame">Avengers: Endgame</option>
+                            </optgroup>
+                            <optgroup label="Hindi">
+                                <option value="3 Idiots">3 Idiots</option>
+                                <option value="Dangal">Dangal</option>
+                                <option value="Chhichhore">Chhichhore</option>
+                            </optgroup>
+                            <optgroup label="Kannada">
+                                <option value="Kantara">Kantara</option>
+                                <option value="KGF">KGF</option>
+                                <option value="Lucia">Lucia</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="snacks">Snacks (comma-separated):</label></td>
+                    <td><input type="text" id="snacks" name="snacks" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Plan Movie Night</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
